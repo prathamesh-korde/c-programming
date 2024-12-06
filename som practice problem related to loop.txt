@@ -1,0 +1,24 @@
+//printing a factorial of n
+/*#include<stdio.h>
+int main(){
+    int n;
+    int fact=1;
+    printf("enter value of n-");
+    scanf("%d \n",&n);
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    printf("value of factroil of %d \n",fact);
+    return 0;
+}*/
+//printing table of n in reverse order
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter value of n");
+    scanf("%d",&n);
+    for(int i=10;i>=1;i--){
+        printf("reverse order table- %d \n",i*n);
+    }
+    return 0;
+}

@@ -1,0 +1,50 @@
+// instructation and opperator
+/*instructation-
+("this are statemet in program")
+types-
+1.declaration
+2.arithmetic
+3.control
+*/
+//declare variable before it use
+#include <stdio.h>
+#include<math.h>
+int main() {
+    // valid statement
+    int a=22;
+    int b=a;
+    int c=b*5;
+    int d=1,e;
+    int power=pow(c,d);//gives c^d
+     printf(" value of power=%d\n",power);
+    printf(" value of e=%d\n",e);
+    int var1,var2,var3;
+    var1=var2=var3=6;
+    printf(" value of var=%d\n",var1);
+    double A=5;
+    double B=10;
+    double x,y=A*B;//value of A*B is only assign to y
+    printf(" value of y=%f\n",&y);
+    printf(" value of x=%f",&x);
+    int g=b+c;/*OPERATORS-
+    .additiation=+
+    substractation=-
+    division-\
+    multiplacation=*
+    modulo(gives reminder)=%(only applicable on integer and sign dependend on 
+    sign of numanator)
+    //int g=b*c;
+    //int g=b/c;
+//invalid statement
+/*int age=5;
+    int current_age=age+year;
+    int year=2
+    int var1=var2=var3=6;
+    int b+c=a;
+    int a=bc;
+    int a=b^c;//no operator in c foe to_the power
+    instent of it we use function-"pow"
+    as pow(b,c) refers to b^c
+    ;*/
+    return 0;
+}

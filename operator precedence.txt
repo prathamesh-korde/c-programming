@@ -1,0 +1,23 @@
+//operator precedence-
+/*"()"has higest precedence
+first precedence-*,/,%
+secound precedence-+,-
+third precedence-=*/
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a=4+5*10;//a=54
+    int b=4*3/6*5;/*associativity(for same precedence-)-//b=10';
+    left to right*/
+    int c=4*(2+6)*5;//"()"has higest precedence//c=160
+    printf("value of a=%d\n",a);
+    printf("value of b=%d\n",b);
+     printf("value of c=%d",c);
+     return 0;
+    
+}
+/* CONTROL INSTRUCTATION-(use to determine flow of program)
+1.sequence control
+2.decision control
+3.loop  control
+4.case control*/

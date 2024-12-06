@@ -1,0 +1,37 @@
+//write a function to convert celsius to fahrenhit;
+/*#include<stdio.h>
+float fah(int n);
+int main(){
+    int n;
+    printf("enter tempature in celsius");
+    scanf("%d",&n);
+    printf("temparature in fahrenhite %f-",fah(n));
+    return 0;
+}
+float fah(int n){
+    float fahr= n*(9.0/5.0)+32;
+    return fahr;
+}*/
+// write a program to print n terms of fibonacci sequence(by using recursion)
+/*#include<stdio.h>
+int fib(int n);
+int main(){
+    int n;
+    printf("enter value of n");
+    scanf("%d",&n);
+    printf("%d",fib(n));
+    return 0;
+}
+int fib(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    int fibNm1=fib(n-1);
+    int fibNm2=fib(n-2);
+    int fibN=fibNm1+fibNm2;
+    return fibN;
+}*/
+//by using loop

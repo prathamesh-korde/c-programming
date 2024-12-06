@@ -1,0 +1,74 @@
+/*passing arguments
+data_type fun_name();
+data_type fun_name(int n);
+data_type func_name(int a,int b0);
+*/
+/*#include<stdio.h>
+int sum(int x,int y);
+int main(){
+    int a,b;
+    printf("enter first no-");
+    scanf("%d",&a);
+    printf("enter secoun number-");
+    scanf("%d",&b);
+    int s= sum(a,b);
+    printf("value of sum-%d",s);
+    return 0;
+}
+int sum(int x,int y){
+    return x+y;
+}*/
+/*#include<stdio.h>
+int table(int n);
+int main(){
+    int n;
+    printf("enter value of n");
+    scanf("%d",&n);
+    table(n);//argument /actual parameter
+    return 0;
+    
+}
+int table(int x){ //parameter/formal parameter
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i*x);
+    }
+}*/
+/* ARGUMENT VS PARAMETER                          
+ARGUMENT-*values that are                      PARAMETER-*values in              passed in fun call                                 decleration                                                                       and 
+                                                        defination 
+*used to send valuse                                   * used in receive value
+*actual parameter                                     *formal parameter
+
+NOTES-
+*function can only return one value at a time
+*changes to parameter in function don't change the values in calling function
+(becouse a copy of argument is passed to the function)
+*/
+#include<stdio.h>
+void mar_prise( float value);
+int main(){
+    float value=100.0;
+    mar_prise(value);
+    printf("prise %f",value);
+return 0;
+    
+}
+void mar_prise(float value){
+    printf(" orignal prise-%f ",value+0.18*value);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

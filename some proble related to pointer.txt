@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int x;
+    int *ptr;
+    ptr=&x;
+    *ptr=4;
+    printf (" x= %d\n",x);
+    printf("value *ptr = %d \n",*ptr);
+    *ptr+=2;//*ptr=*ptr+2
+    printf (" x= %d\n",x);
+    printf("value *ptr= %d\n",*ptr);
+    (*ptr)++;
+    printf (" x= %d\n",x);
+    printf("value *ptr= %d",*ptr);
+    
+    return 0;
+    
+}

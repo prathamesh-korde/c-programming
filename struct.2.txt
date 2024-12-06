@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include<string.h>
+typedef struct address{
+    int house_no;
+    int block;
+    char city[100];
+    char state[100];
+}adds ;
+void print_add(adds add);
+int main() {
+   adds add[5];
+   printf("enter address of 1st person-");
+   scanf("%d",&add[0].house_no);
+   scanf("%d",&add[0].block);
+   scanf("%s",&add[0].city);
+   scanf("%s",&add[0].state);
+  
+  printf("enter address of 2st person-");
+   scanf("%d",&add[1].house_no);
+   scanf("%d",&add[1].block);
+   scanf("%s",&add[1].city);
+   scanf("%s",&add[1].state);
+   
+   printf("enter address of 3st person-");
+   scanf("%d",&add[2].house_no);
+   scanf("%d",&add[2].block);
+   scanf("%s",&add[2].city);
+   scanf("%s",&add[2].state);
+   
+   printf("enter address of 4st person-");
+   scanf("%d",&add[3].house_no);
+   scanf("%d",&add[3].block);
+   scanf("%s",&add[3].city);
+   scanf("%s",&add[3].state);
+   
+   printf("enter address of 5st person-");
+   scanf("%d",&add[4].house_no);
+   scanf("%d",&add[4].block);
+   scanf("%s",&add[4].city);
+   scanf("%s",&add[4].state);
+  print_add(add[0]);
+  print_add(add[1]);
+  print_add(add[2]);
+  print_add(add[3]);
+  print_add(add[4]);
+    return 0;
+}
+void print_add(adds add){
+    printf("address is :%d,%d,%s,%s \n",add.house_no,add.block,add.city,add.state);
+}

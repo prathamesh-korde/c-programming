@@ -1,0 +1,68 @@
+/*RECURSION(when a function call itself)
+//each problem solved by loop is also solved by recursion
+*/
+/*#include<stdio.h>
+void print(int n);
+int main(){
+    int n;
+    printf("enter value of n-");
+    scanf("%d \n",&n);
+    print(n);
+    return 0;
+}
+//recursive function;
+void print(int n){
+    if(n==0){
+        return;;
+    }
+    printf("hellow world\n");
+    print(n-1);
+}*/
+//sum of first natural no
+#include<stdio.h>
+int sum(int n);
+int main(){
+    printf("sum is %d ",sum(5));
+    return 0;
+}
+//recursion function
+int sum(int n){
+    if(n==1){
+        return 1;
+    }
+    int sumN1=sum(n-1);//sum of 1 to n
+    int sumN=sumN1+n;
+    return sumN;
+}
+//factorial of n
+#include<stdio.h>
+int fact(int n);
+int main(){
+    int n;
+    printf("enter value of n-");
+    scanf("%d",&n);
+    printf("factroil is%d",fact(n));
+    return 0;
+    
+}
+int fact(int n){
+    if(n==0){
+        return 1;
+    }
+    int facNm1=fact(n-1);
+    int factN=n*facNm1;
+    return factN;
+    
+}
+//PROPERTIES OF RECURSION
+/*
+*anything that can done with iteration(loop).can be done with recursion and vice-versa
+*recursion that somthing which give most simplest solution
+*base case is the condiation that stop the recursion
+*iteration has infinite loop & recursion has stack overflow*/
+
+
+
+
+
+

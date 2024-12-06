@@ -1,0 +1,18 @@
+#include<stdio.h>
+void print_add(int n);
+void _print_add(int *n);
+int main(){
+    int n=5;
+    print_add(n);
+    _print_add(&n);
+    printf("address of num-%d\n",&n);
+    return 0;
+}
+//call by value
+void print_add(int n){
+    printf("address of a-%d\n",&n);//gives different value of address frome main(due to it only copy and value of variable and perform operation on it)
+}
+//call by reference
+void _print_add(int *n){//give same value of address frome main(due to it perform operation in that variable)
+     printf("address of a-%d\n",n);
+}

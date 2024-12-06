@@ -1,0 +1,26 @@
+/* POINTER IN FUNCTION CALL-*CALL BY VALU(we pass value of variable as argument)
+                           * CALL BY RAFERENCE(we pass address of variable as argument)
+                          */
+#include<stdio.h>
+int square(int n);
+int _square(int *n);
+int main(){
+    int num=5;
+    printf("area of square-%d\n",square(num));
+    printf("value at ptr-%d\n",_square(&num));
+    
+    
+    return 0;
+    
+}
+//call by value
+int square(int n){
+    printf("value n %d \n",n);
+    return n=n*n;
+    
+}
+//call by raference
+int _square(int *n){
+    *n=(*n)*(*n);
+    printf("value at pointrer-%d\n",*n);
+}

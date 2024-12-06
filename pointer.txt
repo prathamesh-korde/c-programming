@@ -1,0 +1,54 @@
+/*POINTER-
+a variable that store the memory address of another variable
+syntex-
+int *ptr=&var_name//                     where"*" is value at address operator
+int vae2=*ptr                               and"&" is address of operator
+*/
+/*#include<stdio.h>
+int main(){
+    int age=20;
+    int *ptr=&age;
+    int age2=*ptr;
+    printf("%d",age2);
+    return 0;
+}*/
+/*declaring pointer-
+int *ptr;    //int age=25;
+char *ptr;   //char star='*';
+float *ptr;  //float prise=100.000;
+FORMATE SPACIFIER-
+printf("%p",&age); (address of stored variable)//%p (pointer address)//%u                                                                (unsigned int)
+printf("%p",ptr); //address of stored variable
+printf("%p",&ptr);//address of ptr*/
+/*#include<stdio.h>
+int main(){
+    int age=20;
+    int *ptr=&age;
+    //address
+    printf("%p\n",ptr);
+    printf("%u\n",&age);
+    printf("%u\n",ptr);
+    printf("%u\n",&ptr);
+    return 0;
+}*/
+//formate spacifier
+/* printf("%d",age);
+printf("%d",*ptr);
+printf("%d",*(&age));*/
+#include<stdio.h>
+int main(){
+    int age=20;
+    int *ptr=&age;
+    printf("%d\n",age);
+printf("%d\n",*ptr);
+printf("%d",*(&age));
+    
+    return 0;
+}
+
+
+
+
+
+
+

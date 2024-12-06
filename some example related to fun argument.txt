@@ -1,0 +1,88 @@
+// square of a no-
+// by using user defined function
+/*#include<stdio.h>
+int square(int n);
+int main()
+{
+    int n;
+    printf("enter value of n-");
+    scanf("%d \n",&n);
+    //int square(n);
+    int s=square(n);
+     printf("square is-%d",s);
+    return 0;
+}
+int square(int n){
+    return n*n;
+}*/
+// by using linary function
+/*#include<stdio.h>
+#include<math.h>
+int main(){
+    int n;
+    printf("enter value of n");
+    scanf("%d\n",&n);
+    int c=pow(n,2);
+    printf("square is %d",c);
+    return 0;
+    
+    
+}*/
+//
+
+// creating a function to calclute area of a square ,rectangle,circle
+#include<stdio.h>
+float square(float side);
+float circle(float r);
+float rectangle(float hight,float width);
+int main()
+{
+    float side;
+    float r;
+    float hight;
+    float width;
+    printf("enter value of side of square ");
+    scanf("%f \n",&side);
+    printf("enter value of rdius of circle-");
+    scanf("%f \n",&r);
+    printf("enter value of hight of rectangle");
+    scanf("%f \n",&hight);
+    printf("enter value of width of rectangle");
+    scanf("%f \n",&width);
+    float area_square=square(side);
+    float area_circle=circle(r);
+    float area_rectangle=rectangle(hight,width);
+    printf("area of square- %f\n",area_square);
+    printf("area of circle- %f\n",area_circle);
+    printf("area of rectangle-%f\n",area_rectangle);
+    return 0;
+    
+}
+float square(float side){
+    return side*side;
+}
+float circle(float r){
+    return 3.14*r*r;
+}
+float rectangle(float hight,float width){
+    return hight*width;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

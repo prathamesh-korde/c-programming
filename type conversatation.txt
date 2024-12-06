@@ -1,0 +1,8 @@
+//type conversatation
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a=(int) 1.9999999;//output-1
+    printf("value of a-%d",a);
+    return 0;
+}

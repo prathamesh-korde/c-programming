@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<string.h>
+typedef struct bank_account{
+   int accNo;
+   char name[100];
+   
+} acc;
+int main() {
+    acc acc1={122,"prathamesh"};
+    acc acc2={25,"rajesh"};                   
+    printf("account no is-%d \n",acc2.accNo);
+    printf("account no is-%s",acc2.name);
+    
+}

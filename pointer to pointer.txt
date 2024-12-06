@@ -1,0 +1,17 @@
+/*pointer to pointer
+A VARIABLE THAT STORE THE MEMORY ADDRESS OF ANOTHER POINTER
+//SYNTEX-
+int **pptr;
+char **pptr;
+float **ptr;
+*(value at ptr)
+&(address of ptr)
+*/
+#include<stdio.h>
+int main(){
+    float prise=100.0;
+    float *ptr=&prise;
+    float **ptpr=&ptr;
+    printf("value at ptpt %f",**ptpr);
+    return 0;
+}

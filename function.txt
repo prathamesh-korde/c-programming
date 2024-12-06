@@ -1,0 +1,82 @@
+//FUNCTION
+/* block of code that perform particular task
+for simplicity one function has one work
+*it can be use multipe time
+*it increase code reusability
+syntex 1-
+function prototype/decleration
+ex-void printhellow();// void-don't write something
+//syntex 2
+function defination
+void printhellow(){
+    printf("hellow");
+}
+syntex 3-
+function call-
+int main(){
+    printhellow();
+    return 0;
+}*/
+#include<stdio.h>
+//decleration / prototype
+void printhellow();
+int main()
+{
+    printhellow();//function call
+    printhellow();
+    printhellow();
+    return 0;
+}
+//function defination
+void printhellow(){
+    printf("hellow \n");
+    printf("prathamesh\n");
+}
+
+//write a function that print namaste if user is indian & 
+//bonjour if the user is french
+/*#include<stdio.h>
+void namaste();
+void bonjour();
+int main(){
+    char a;
+    printf("enter 'i' for india else enter 'f' for french- " );
+    scanf("%c \n",&a);
+    if(a=='i'){
+     namaste();  
+    }
+    else if(a=='f'){
+    bonjour();
+    }
+    else{
+        printf("enter valid option");
+    }
+    return 0;
+}
+void namaste(){
+    printf("nameste welcome to french");
+    
+    
+}
+void bonjour(){
+    printf("bonjour welcome to india");
+}*/
+/* PROPERTIES-
+*execution always start from main
+*a fun get call directelly or indrectelly frome main
+*there can be multiple func in program*/
+/* TYPE OF FUNCTION-
+*library function-(special fun inbulid in c)
+ex-scanf(),printf()
+*user defined fun-(defind and decleared by progranner)*/
+
+
+
+
+
+
+
+
+
+
+

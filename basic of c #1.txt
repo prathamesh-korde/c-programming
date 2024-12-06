@@ -1,0 +1,35 @@
+// #1
+//basic of c
+//c is case sencetive
+#include <stdio.h>//pre-processer directive
+
+int main() {//execution start line by line
+printf("hellow prathamesh \n");//indicate output functaton("libary functation")
+printf("hellow prathamesh\n");//"\n"indicate next line
+printf("hellow prathamesh");
+// deta_type variable name=assign_value
+    int a=5;
+    char b='h';//":" indicate end
+    double v=20.2;
+    /*OUTPUT_
+    1.integers
+    printf("value of a is %d",a);
+    2.real numbers
+    printf("value of v is %f",v);
+    3.characaters
+    printf("character b is %c",b);
+    "%d,%F,%C" called formate spessers
+    */
+    printf("value of a is= %d\n",a);
+    printf("value of v is= %f\n",v);
+    printf("character b is =%c\n",b);
+    /*INPUT FUNCTATION-
+    scanf("formate spacesser"(%d,%F,%C)(",&("indicate address of stored variable")name_variable);*/
+    int age;
+    printf("enter age=");
+    scanf("%d",& age);
+    printf("age is=%d",age);
+    return 0;//indicate zero error
+    /*"multiple line 
+    comment"*/
+}

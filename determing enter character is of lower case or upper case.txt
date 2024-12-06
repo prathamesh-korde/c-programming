@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character-");
+    scanf("%d",&ch);
+    if(ch>='A'&& ch<='Z')
+    {
+        printf("upper character");
+        
+    }
+    else if('a'<=ch &&'z'>=ch)
+    {
+        printf("lower character");
+    }
+    return 0;
+}
